@@ -236,6 +236,28 @@ body {
   gap: 1rem;
 }
 
+.counter__controls .btn {
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  justify-content: center;
+  font-size: 1.7rem;
+  line-height: 1;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+  background: var(--accent);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.counter__controls .btn:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-contrast);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
 .counter__value {
   font-size: 1.6rem;
   font-weight: 700;
