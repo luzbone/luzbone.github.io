@@ -1,0 +1,17 @@
+{
+  "name": "luzbone.github.io",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "dev-server",
+      "command": "npm run dev",
+      "description": "Live-reloading static dev server for the site at http://localhost:8080"
+    }
+  ],
+  "ports": [
+    {
+      "name": "dev-server",
+      "port": 8080
+    }
+  ]
+}
