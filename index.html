@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal website of luzbone." />
+    <title>luzbone</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127775;</text></svg>"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="/">luzbone</a>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Toggle color theme"
+        >
+          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main" class="main">
+      <section class="hero">
+        <p class="hero__eyebrow">Hello, world</p>
+        <h1 class="hero__title">I'm <span class="accent">luzbone</span>.</h1>
+        <p class="hero__lede">
+          Welcome to my corner of the internet. This site is built as a fast,
+          dependency-light static site and deployed with GitHub Pages.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://github.com/luzbone"
+            >GitHub</a
+          >
+          <a class="btn" href="#projects">Projects</a>
+        </div>
+      </section>
+
+      <section id="projects" class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title" class="section-title">Projects</h2>
+        <ul class="card-grid" id="project-list">
+          <li class="card card--placeholder">Loading projects…</li>
+        </ul>
+      </section>
+
+      <section class="counter" aria-labelledby="counter-title">
+        <h2 id="counter-title" class="section-title">Interactive demo</h2>
+        <p class="counter__hint">
+          A tiny bit of JavaScript to prove the site is interactive.
+        </p>
+        <div class="counter__controls">
+          <button
+            class="btn"
+            id="decrement"
+            type="button"
+            aria-label="Decrease"
+          >
+            −
+          </button>
+          <output class="counter__value" id="counter-value">0</output>
+          <button
+            class="btn"
+            id="increment"
+            type="button"
+            aria-label="Increase"
+          >
+            +
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Built with plain HTML, CSS &amp; JS ·
+        <span id="year">2026</span> luzbone
+      </p>
+    </footer>
+
+    <script src="assets/js/main.js" type="module"></script>
+  </body>
+</html>

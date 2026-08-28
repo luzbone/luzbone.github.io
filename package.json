@@ -1,0 +1,22 @@
+{
+  "name": "luzbone-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal static website for luzbone, deployed with GitHub Pages.",
+  "scripts": {
+    "dev": "live-server --port=8080 --host=0.0.0.0 --no-browser --wait=200",
+    "start": "npm run dev",
+    "serve": "http-server . -p 8080 -a 0.0.0.0 -c-1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "html-validate \"**/*.html\"",
+    "test": "npm run format:check && npm run lint"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "html-validate": "^10.9.0",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "prettier": "^3.9.6"
+  }
+}
